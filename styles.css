@@ -1,0 +1,64 @@
+main{
+  display:grid;
+  grid-template-columns:50% 50%;
+  height:100vh;
+}
+.right{
+  text-align: left;
+}
+h1{
+  margin-top: 80px;
+  width:fit-content;
+font-family:  Helvetica, sans-serif;
+
+}
+h2 h1{
+  color:inherit
+}
+.inherit{
+text-align: center;
+
+
+}
+.addItem{
+ 
+  text-align:center; min-height:20px;border:1px solid lightgrey
+
+}
+.mainItem{
+  padding-top: 5px;
+  display:grid;
+  grid-template-columns: auto 100px;
+  width:fit-content;
+  margin-top:5px;
+}
+.mainItem button{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.buy{
+  background:#31ad6c;
+  margin-left: 3px;
+  color:white;
+  text-align: left;
+}
+.buyed{
+  background:#1259af;
+  margin-left: 3px;
+  color:white;
+  text-align: right;
+}
+.del_buyed{
+  background: #1259af;
+  color:white;
+  margin-top:20px;
+  min-height:22px;
+ padding-top:3px;
+}
+.deleteAll{
+  background: black;
+  color:white;
+  margin-top:5px;
+  padding-top:3px;
+  min-height:22px;
+}
