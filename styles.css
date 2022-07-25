@@ -54,6 +54,7 @@ text-align: center;
   margin-top:20px;
   min-height:22px;
  padding-top:3px;
+ font-family: Arial, Helvetica, sans-serif;
 }
 .deleteAll{
   background: black;
@@ -61,4 +62,12 @@ text-align: center;
   margin-top:5px;
   padding-top:3px;
   min-height:22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info{
+  border:1px solid lightgray;
+  margin-top:5px;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
