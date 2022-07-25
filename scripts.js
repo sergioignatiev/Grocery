@@ -29,10 +29,10 @@ function complete(x){
         
     }
 }
-  /*Простенькая функция чтобы удалить все содержимое с id demo*/
+  /*Простенькая функция чтобы удалить все содержимое с id LIST*/
   function deleteAll(){
     if(confirm('Удалить все?')){
-        document.getElementById("list").innerHTML="";
+        document.getElementById("list").innerHTML=" ";
         
     }
     else{}
@@ -48,22 +48,22 @@ function complete(x){
     }
     x.style.display=display;
     }
-    
-   /*Функция и нитервал снизу отвечают за Storage API. Усли "items" пустые то автоматически присваивается предыдущее значение элементу с 
- ID list*/
- setInterval(miStorage,1)
+        /*Функция и нитервал снизу отвечают за Storage API. Усли "items" пустые то автоматически присваивается предыдущее значение элементу с 
+ ID demo перед этим также надо сделать LIST !=""*/
+  setInterval(miStorage,1)
  
- function miStorage(){
-  let storage=""
+  function miStorage(){
+   let storage=""
 let aa=document.getElementById("list").innerHTML;
 if(aa!==""){
-  storage=aa
+   storage=aa
 }
 else{
 storage=localStorage.getItem("items")
 }
 localStorage.setItem("items",storage);
 
- }
- document.getElementById("list").innerHTML=localStorage.getItem('items')
+  }
+  document.getElementById("list").innerHTML=localStorage.getItem('items')
+
 
