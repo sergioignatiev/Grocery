@@ -66,4 +66,39 @@ localStorage.setItem("items",storage);
   }
   document.getElementById("list").innerHTML=localStorage.getItem('items')
 
+/*<!DOCTYPE html> grid
+<html>
+<body>
+<style>
+#main{
+display:grid;
+grid-template-columns: 50% auto;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+display:none
+}
 
+@media(max-width:700px){
+#main{
+grid-template-columns: 0px auto;
+}
+.item1{
+display:block
+}
+
+}
+
+</style>
+
+<div id="main">
+<img style="width:100%" src="https://sergioignatev.github.io/Grocery/fruits.jpg"/>
+<div id="cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec massa ut augue porttitor tristique. 
+
+</div>
+<img class="item1" style="width:100%" src="https://sergioignatev.github.io/Grocery/fruits.jpg"/>
+</div>
+
+</body>
+</html> */
