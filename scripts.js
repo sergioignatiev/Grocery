@@ -9,7 +9,7 @@ inherit[i].style.width=x+"px"
 function Add(){
     let inp=document.getElementById("inp").value.toUpperCase();
     document.getElementById('inp').value = ''
-    let addItem=`<div ondblclick="d(this)" class="mainItem"><div class="addItem"  style="width:${x}px">${inp}</div><button onclick=(complete(this)) class="buy" style="height:22px;border:none;border-radius:2px;">КУПИТЬ</button> </div>`
+    let addItem=`<div ondblclick="d(this)" class="mainItem"><div class="addItem"  style="width:${x}px">${inp}</div><button onclick=(complete(this)) class="buy" style="height:22px;border:none;border-radius:2px;">Купить</button> </div>`
     document.getElementById("list").innerHTML +=addItem 
 
 }
