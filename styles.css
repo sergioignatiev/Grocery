@@ -29,7 +29,11 @@ display:none;
   .buyed{
     width:60px;
   }
-
+.right{
+  width:85vw;
+  margin: left 10vw;;
+  margin-right:auto;
+}
 
 }
  .right{
