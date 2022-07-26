@@ -1,17 +1,23 @@
 
 let x=document.getElementById("head").offsetWidth;
-
+let innerW=window.innerWidth
 let inherit=document.getElementsByClassName("inherit");
 for(let i=0;i<inherit.length;i++){
-inherit[i].style.width=x+"px"
-}
+inherit[i].style.width=x+"px"}
+
 
 function Add(){
     let inp=document.getElementById("inp").value.toUpperCase();
     document.getElementById('inp').value = ''
-    let addItem=`<div ondblclick="d(this)" class="mainItem"><div class="addItem"  style="width:${x}px">${inp}</div><button onclick=(complete(this)) class="buy" style="height:22px;border:none;border-radius:2px;">Купить</button> </div>`
-    document.getElementById("list").innerHTML +=addItem 
+    let addItem=`<div ondblclick="d(this)" class="mainItem"><div class="addItem"  style="width:${x}px">${inp}</div><button onclick=(complete(this)) class="buy buyBtn" style="height:22px;border:none;border-radius:2px;">Купить</button> </div>`
+    document.getElementById("list").innerHTML +=addItem ;
+   let add= document.getElementsByClassName('addItem');
+if(innerW<500){
+    for(let i=0;i<add.length;i++){
+        add[i].style.width=x-65+"px"
+    }
 
+}
 }
 function complete(x){
     x.innerHTML="Куплено"

@@ -1,11 +1,41 @@
 main{
   display:grid;
-  grid-template-columns:50% 50%;
+  grid-template-columns:50% 50% 0px;
   height:100vh;
 }
-.right{
+.mobile {
+  grid-column-start: 1;
+  grid-column-end: 3;
+display:none;
+}
+
+@media (max-width: 900px) {
+ main{grid-template-columns:40% 60% ;}
+}
+@media (max-width: 800px) {
+  main{grid-template-columns:30% 70% ;}
+ }
+ @media (max-width: 700px) {
+  main{grid-template-columns:0px 100% ;}
+  .mobile{display:block}
+  .right{margin-left:auto;
+  margin-right: auto;
+  }
+}
+@media(max-width:500px){
+  .buy{
+    width:60px;
+  }
+  .buyed{
+    width:60px;
+  }
+
+
+}
+ .right{
   text-align: left;
 }
+
 h1{
   margin-top: 80px;
   width:fit-content;
