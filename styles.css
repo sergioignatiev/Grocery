@@ -18,7 +18,8 @@ display:none;
  @media (max-width: 700px) {
   main{grid-template-columns:0px 100% ;}
   .mobile{display:block}
-  .right{margin-left:auto;
+  .right{margin-left:16vw;
+    width:80vw;
   margin-right: auto;
   }
 }
