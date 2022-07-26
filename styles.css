@@ -31,12 +31,20 @@ display:none;
     width:60px;
   }
 .right{
+  text-align: center;
   width:90vw;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left:7vw;
+  margin-right:3vw;
+  
+}
+.buyBtn{min-height: 30px;}
+.inherit{min-height:30px;}
+#inp{min-height:30px;}
+#delall{min-height:30px;padding-top:10px}
+#delbuy{min-height: 30px;padding-top: 10px;}
 }
 
-}
+
  .right{
   text-align: left;
 }
