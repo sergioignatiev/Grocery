@@ -3,6 +3,7 @@ main{
   grid-template-columns:50% 50% 0px;
   height:100vh;
 }
+
 .mobile {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -40,9 +41,10 @@ display:none;
 .buyBtn{min-height: 30px;}
 .inherit{min-height:30px;}
 #inp{min-height:30px;}
-#delall{min-height:30px;padding-top:10px}
-#delbuy{min-height: 30px;padding-top: 10px;}
-.addItem{padding-top:7px;}
+#delall{min-height:30px;display:flex; justify-content: center;align-items: center;}
+#delbuy{min-height: 30px;display:flex; justify-content: center;align-items: center;}
+.addItem{display:flex; justify-content: center;align-items: center;}
+
 }
 
 
