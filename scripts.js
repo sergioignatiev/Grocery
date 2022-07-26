@@ -8,9 +8,11 @@ inherit[i].style.width=x+"px"}
 
 function Add(){
     let inp=document.getElementById("inp").value.toUpperCase();
-    document.getElementById('inp').value = ''
+    document.getElementById('inp').value = '';
+    if(inp!=""){
     let addItem=`<div ondblclick="d(this)" class="mainItem"><div class="addItem"  style="width:${x}px;background:whitesmoke">${inp}</div><button onclick=(complete(this)) class="buy buyBtn" style="height:22px;border:none;border-radius:4px;">Купить</button> </div>`
-    document.getElementById("list").innerHTML +=addItem ;
+    document.getElementById("list").innerHTML +=addItem ;}
+    
    let add= document.getElementsByClassName('addItem');
 if(innerW<500){
     for(let i=0;i<add.length;i++){
